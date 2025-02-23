@@ -23,7 +23,7 @@ import React from "react";
 import Login from "./pages/login";
 import Blog from "./pages/blog";
 function App() {
-  const [user, loading] = useAuthState(auth);
+  const [user] = useAuthState(auth);
   if (!user) {
     return <Login />;
   } else {
